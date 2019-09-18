@@ -1,0 +1,20 @@
+{
+  "name": "pokemon-next-graphql-react",
+  "private": true,
+  "license": "ISC",
+  "dependencies": {
+    "cross-fetch": "^3.0.2",
+    "graphql-react": "^8.2.0",
+    "next": "latest",
+    "next-graphql-react": "^3.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "semantic-ui-react": "^0.88.1",
+    "use-dark-mode": "^2.3.1"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
