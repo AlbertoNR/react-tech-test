@@ -22,9 +22,7 @@ const Emoji = ({ type }) => {
   };
 
   return (
-    <span title={type} className="emoji"
-    
-    >
+    <span title={type} className="emoji">
       {emojiLiteral[type]}
     </span>
   );

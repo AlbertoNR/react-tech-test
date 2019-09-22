@@ -3,7 +3,7 @@ import React from 'react';
 const Toggle = ({ checked, onChange }) => (
   <span className="toggle-control">
     <input
-      className="dmcheck"
+      className="dark-mode-check"
       type="checkbox"
       checked={checked}
       onChange={onChange}

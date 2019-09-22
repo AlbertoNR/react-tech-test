@@ -1,5 +1,5 @@
 import React from 'react';
-import Toggle from './Toggle';
+import Toggle from './toggle';
 import useDarkMode from 'use-dark-mode';
 
 const DarkModeToggle = () => {

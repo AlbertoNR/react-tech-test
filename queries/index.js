@@ -1,4 +1,4 @@
-export const POKEMONS_1GEN = `
+export const POKEMONS_1GEN =  /* GraphQL */ `
 {
   pokemons(first: 151) {
     id
@@ -17,34 +17,21 @@ export const POKEMONS_1GEN = `
 }
 `;
 
-export const POKEMON = (name) => `
+export const POKEMON = (name) => /* GraphQL */ `
 {
   pokemon(name: "${name}") {   
     number
     name
     image
-    attacks {
-      special {
-        name
-        type
-        damage
-      }
+    weight{
+      maximum
     }
-    evolutions {
-      number
-      name
-      weight {
-        minimum
-        maximum
-      }
-      attacks {
-        fast {
-          name
-          type
-          damage
-        }
-      }
+    height{
+      maximum
     }
+    classification
+    weaknesses
+    resistant
   }
 }
 `;
