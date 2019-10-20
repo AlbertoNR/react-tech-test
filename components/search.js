@@ -66,7 +66,7 @@ const SearchFilterPanel = ({ render, data }) => {
         </div>
         <a href="#" className="resetButton" onClick={handleReset} >Reset</a>          
       </div>
-      <motion.div initial="initial" animate="enter" exit="exit" variants={{ enter: { staggerChildren: 0.1  } }} className="content">
+      <motion.div initial="initial" animate="enter" exit="exit" variants={{ exit: { staggerChildren: 0.1  } }} className="content">
         {render(state.items)}
       </motion.div> 
     </>
