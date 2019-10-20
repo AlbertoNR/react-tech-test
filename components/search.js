@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import Select from 'react-select';
+import { motion } from 'framer-motion';
 
 const SearchFilterPanel = ({ render, data }) => {
   const customContainerStyles = base => ({
@@ -65,7 +66,9 @@ const SearchFilterPanel = ({ render, data }) => {
         </div>
         <a href="#" className="resetButton" onClick={handleReset} >Reset</a>          
       </div>
-      {render(state.items)}
+      <motion.div initial="initial" animate="enter" exit="exit" variants={{ enter: { staggerChildren: 0.1  } }} className="content">
+        {render(state.items)}
+      </motion.div> 
     </>
   );
 };

@@ -4,9 +4,10 @@
   "license": "ISC",
   "dependencies": {
     "cross-fetch": "^3.0.2",
+    "framer-motion": "^1.6.14",
     "graphql-react": "^8.2.0",
     "next": "latest",
-    "next-graphql-react": "^3.0.2",
+    "next-graphql-react": "^4.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-loader-spinner": "^3.1.4",
